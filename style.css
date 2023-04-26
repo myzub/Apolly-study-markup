@@ -33,7 +33,7 @@ body {
 header {
   display: block;
   margin: 35px 135px 0 135px;
-  height: 114px;
+  height: auto;
 }
 
 .header-info {
@@ -142,7 +142,8 @@ header {
   display: flex;
   flex-direction: row;
   align-items: center;
-  padding-top: 82px;
+  margin-top: 82px;
+  padding: 0 !important;
 }
 
 .hero-download-block {
@@ -349,6 +350,7 @@ header {
   font-weight: 600;
   font-size: 25px;
   line-height: 38px;
+  text-transform: uppercase;
 }
 
 .feature-paragraph {
@@ -364,10 +366,6 @@ header {
   display: flex;
   flex-direction: column;
   align-items: center;
-}
-
-.feature-title {
-  text-transform: uppercase;
 }
 
 .feature-float-block-wrapper {
@@ -558,6 +556,7 @@ header {
 }
 
 .counter-text {
+  text-transform: uppercase;
   font-weight: 600;
   font-size: 20px;
   line-height: 30px;
@@ -674,7 +673,7 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 50px 75px 60px;
+  margin: 50px 0 60px;
 }
 
 .dev-photo {
@@ -821,7 +820,6 @@ img[src="img/facebook-fill.png"] {
   width: 570px;
   height: 330px;
   padding: 40px 40px 20px;
-  /*bottom: 14px;*/
 }
 
 .customer-card-wrapper > .hidden-left > p,
@@ -1162,8 +1160,6 @@ img[src="img/facebook-fill.png"] {
   color: #ffffff;
 }
 
-
-
 @media screen and (max-width: 480px) {
   .desktop-version {
     display: none;
@@ -1171,6 +1167,14 @@ img[src="img/facebook-fill.png"] {
 
   .mobile-version {
     display: block;
+  }
+
+  .mobile-p {
+    width: 300px !important;
+  }
+
+  .hero-section {
+    height: 1200px;
   }
 
   header {
@@ -1223,16 +1227,20 @@ img[src="img/facebook-fill.png"] {
 
   .hero-content {
     padding: 0;
+    padding-top: 108px;
+    flex-direction: column;
   }
+
   .hero-download-block {
-    margin: 0 36px 0 16px;
+    margin: 20px 36px 60px 16px;
     padding: 30px 12px 22px 18px;
     width: auto;
-    height: 318px;
+    max-height: 318px;
+    overflow: hidden;
   }
 
   .hero-rectangle {
-    width: 323px;
+    width: 90%;
     height: 358px;
     left: 36px;
   }
@@ -1245,10 +1253,11 @@ img[src="img/facebook-fill.png"] {
   }
 
   .hero-download-block > p {
-    margin-bottom: 30px;
+    margin: 13px 0 25px;
   }
 
   .hero-download-block > h5 {
+    margin-bottom: 15px;
     font-weight: 600;
     font-size: 20px;
     line-height: 30px;
@@ -1257,5 +1266,443 @@ img[src="img/facebook-fill.png"] {
 
   .hero-download-button-wrapper > img {
     width: 109px;
+  }
+
+  .mobile-app-mockup {
+    max-height: 521px;
+    left: 55px;
+  }
+
+  .about {
+    height: 1087px;
+  }
+
+  .about-header {
+    max-width: 100%;
+    margin: 60px 37px 40px;
+  }
+  .about-our-app {
+    margin-top: 0;
+
+    font-weight: 600;
+    font-size: 25px;
+    line-height: 38px;
+    text-transform: uppercase;
+    color: #232233;
+
+  }
+
+  .about-header > p {
+    margin: 0;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    color: #6C6C72;
+  }
+
+  .about-content-wrapper {
+    flex-direction: column;
+  }
+
+  .android-smartphone-mockup-wrapper {
+    position: relative;
+    margin-bottom: 75px;
+  }
+
+  #android-smartphone-mockup {
+    height: 324px;
+    margin: 0 auto;
+  }
+
+  #about-ellipse-stand {
+    left: 70px;
+    top: 288px;
+  }
+
+  .about-list {
+    margin: 0 16px 0;
+  }
+
+  .about-block {
+    padding: 18px 16px 10px 21px;
+  }
+
+  .about-paragraph-wrapper > h6 {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 30px;
+    padding: 0;
+  }
+
+  .app-features {
+    height: auto;
+  }
+
+  .app-feature-info > h4 {
+    margin: 60px auto 0;
+  }
+
+  .app-feature-info > p {
+    max-width: 300px;
+  }
+
+  .app-feature-item > img {
+    margin: 40px auto 30px;
+  }
+
+  .feature-float-block-wrapper {
+    flex-direction: column;
+  }
+
+  .feature-left-group > .app-feature-item,
+  .feature-right-group > .app-feature-item {
+    align-items: center;
+  }
+
+  .feature-right-group > .app-feature-item > .feature-paragraph {
+    text-align: center;
+  }
+
+  .feature-left-group > .app-feature-item > .feature-paragraph {
+    text-align: center;
+  }
+
+  .feature-title {
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  .feature-img-wrapper > img {
+    height: 468px;
+  }
+
+  .feature-left-group > .top,
+  .feature-right-group > .top {
+    margin: 0;
+  }
+
+  .app-features-list {
+    margin-bottom: 60px;
+  }
+
+  .app-interface-section {
+    height: auto;
+    padding: 0;
+  }
+
+  .interface-header {
+    margin-top: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .interface-header > h4 {
+    max-width: 287px;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 25px;
+    line-height: 38px;
+  }
+
+  .interface-header > p {
+    width: 300px;
+  }
+
+  .interface-slider {
+    margin: 40px 0;
+  }
+
+  .interface-slider > img {
+    height: 354px;
+  }
+
+  img[src="img/iPhoneX-Mockup-3.png"] {
+    height: 444px;
+  }
+
+  .download-app-now {
+    flex-direction: column;
+    margin: 0;
+    height: auto;
+  }
+
+  .download-app-content {
+    margin: 60px 0 40px 15px;
+  }
+
+  .download-app-content > h4 {
+    width: 280px;
+    font-weight: 600;
+    font-size: 25px;
+    line-height: 38px;
+  }
+
+  .download-app-content > p {
+    width: 329px;
+  }
+
+  .charts-counter-wrapper {
+    justify-content: center;
+  }
+
+  .charts-counter {
+    padding: 10px 0 12px;
+    width: 96px;
+    height: 100px;
+  }
+
+  .charts-counter > img {
+    max-width: 16px;
+  }
+
+  .charts-counter > .counter {
+    margin: 10px 0 0;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  .counter-text {
+    text-transform: none;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .gravity-scene-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #gravity-scene {
+    width: 335px;
+    height: auto;
+
+  }
+
+  #download-ellipse-stand {
+    align-self: flex-start;
+    width: 137px;
+    height: 53px;
+    left: 100px;
+    bottom: 30px;
+    margin-bottom: 7px;
+  }
+
+  .how-to-use {
+    height: 357px;
+  }
+
+  .how-to-use-info > h4 {
+    padding-top: 60px;
+    font-weight: 600;
+    font-size: 25px;
+    line-height: 38px;
+    text-align: center;
+  }
+
+  .how-to-use-info > p {
+    margin-top: 40px;
+    width: 300px;
+  }
+
+  #how-to-use-app-video {
+    margin-top: 15px;
+    width: 100%;
+  }
+
+  .our-relative-team {
+    margin: 134px 0 0;
+  }
+
+  .our-relative-info > h4 {
+    font-weight: 600;
+    font-size: 25px;
+    line-height: 38px;
+  }
+
+  .our-relative-info > p {
+    margin: 18px 0 40px;
+  }
+
+  .dev-wrapper {
+    flex-direction: column;
+    margin: 0 auto 30px;
+  }
+
+  .dev-profile {
+    margin: 0 16px 30px;
+    width: 343px;
+  }
+
+  .dev-profile > p {
+    margin-bottom: 30px;
+  }
+
+  .dev-social > img {
+    max-height: 20px;
+  }
+
+  .our-happy-customers {
+    padding: 0;
+    height: auto;
+  }
+
+  .our-happy-customers-info {
+    margin-top: 60px;
+  }
+
+  .our-happy-customers-info > h4 {
+    text-align: center;
+    font-weight: 600;
+    font-size: 25px;
+    line-height: 38px;
+  }
+
+  .our-happy-customers-info > p {
+    margin: 18px 0 30px;
+  }
+
+  .customer-card-wrapper {
+    margin-bottom: 40px;
+  }
+
+  .customer-card {
+    padding: 20px 0;
+    width: 343px;
+    height: 250px;
+  }
+
+  .customer-card > img {
+    width: 50px;
+  }
+
+  .customer-card > h4 {
+    font-weight: 600;
+    font-size: 25px;
+    line-height: 38px;
+  }
+
+  .customer-card > span {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .customer-card > p {
+    max-width: 316px;
+  }
+
+  .customer-card-wrapper > .hidden-left,
+  .customer-card-wrapper > .hidden-right {
+    width: 343px;
+    height: 215px;
+    padding: 20px;
+  }
+
+  .our-relative-team-dots {
+    margin-bottom: 60px;
+  }
+
+  .our-recent-blog {
+    padding: 60px 0 0;
+    height: auto;
+  }
+
+  .recent-blog-info > h4 {
+    font-weight: 600;
+    font-size: 25px;
+    line-height: 38px;
+  }
+
+  .recent-blog-info > p {
+    margin: 18px 0 40px;
+  }
+
+  .blog-card-wrapper {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .blog-card {
+    width: 90%;
+    margin-bottom: 40px;
+  }
+
+  .blog-card > img {
+    width: 100%;
+    object-fit: none;
+  }
+
+  .footer-contact-section {
+    width: 95%;
+    border-radius: 10px;
+    flex-direction: column;
+    height: auto;
+  }
+
+  .footer-email {
+    flex-direction: column;
+    width: auto;
+    border-right: none;
+    border-bottom: 4px solid #232233;
+  }
+
+  .footer-contact-wrapper > img {
+    height: 15px;
+    margin: 47px 0 37px;
+    object-fit: none;
+  }
+
+  .circle-background {
+    width: 50px;
+    height: 50px;
+    margin: 0;
+    top: 30px;
+    right: 169px;
+  }
+
+  .contact-span {
+    margin: 0 0 20px 0;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 30px;
+    text-transform: uppercase;
+  }
+
+  .footer-phone {
+    flex-direction: column;
+  }
+
+  .circle-phone {
+    top: 182px;
+    margin: 0 auto;
+  }
+
+  footer {
+    height: auto;
+    padding: 235px 16px 30px;
+    flex-direction: column;
+  }
+
+  .footer-content {
+    flex-direction: column;
+  }
+
+  .footer-left-wrapper,
+  .footer-center-wrapper {
+    margin-bottom: 60px;
+  }
+
+  .email-send-form {
+    /*width: 100%;*/
+  }
+
+  .email-input {
+    /*width: 100%;*/
+    width: 343px;
   }
 }
